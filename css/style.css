@@ -1,0 +1,849 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap');
+
+*
+{
+    box-sizing:border-box;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+/*
+    Jmmp to the top of the page
+*/
+
+.goto_top
+{   
+    position: fixed;
+    right:15px;
+    bottom:35px;
+
+    z-index: 99;
+}
+
+.goto_top a
+{   
+    color: white;
+    text-decoration: none;
+    background-color: rgb(0,0,0,0.7);
+
+    padding: 18px;
+    margin: 10px;
+
+    transition: padding 0.5s;
+
+}
+
+.goto_top a:hover
+{   
+    color: rgb(255, 245, 191);
+
+    background-color: rgb(0,0,0,0.9);
+
+    font-weight: bolder;
+
+    padding-right: 28px;
+}
+
+
+
+body
+{
+    
+    background-image: url("../images/pexels-lilartsy-1425353_2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100%;
+    
+    background-color:black;
+
+}
+
+
+/*
+    container
+*/
+
+
+#container
+{
+    width:  1140px;
+    height: auto;
+    
+
+    background-image: linear-gradient(rgb(252, 223, 181,0.7),rgb(0,0,0,0.7));
+
+    position: relative;
+    top:-8px;
+    margin: auto;
+
+}
+
+
+/*
+    Menu nav
+*/
+
+.menu
+{   
+    width: 1140px;
+    height:60px;
+
+    background-color: rgb(0,0,0,0.7);
+
+    position: fixed;
+    margin: auto;
+    top: 0px;
+
+    z-index: 100;
+
+    transition: height 0.5s;
+    
+}
+
+.menu:hover
+{
+    background-color: rgb(0,0,0,0.9);
+    height: 68px;
+}
+
+.menu nav
+{
+    position: relative;
+    left: 695px;
+}
+
+.menu nav ul
+{   
+    
+    list-style-type: none;
+    font-size: 20px
+}
+
+.menu nav ul li
+{
+    display: inline-block;
+}
+
+.menu nav ul li a
+{
+    color: White;
+    text-decoration: none;
+
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    transition: padding-left 0.5s;
+}
+
+.menu nav ul li a:hover
+{   
+    color: black;
+    background-color: rgb(255,255,255,0.9);
+    border-radius: 100px;
+
+    font-weight: bolder;
+
+    padding-left: 20px;
+}
+
+/*The Header Section*/
+
+#header_home_page
+{   
+    width:100%;
+    height: 450px;
+
+    background-image: url("../images/1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100%;
+
+    position: relative;
+    top: 60px;
+
+    transition: background-image 0.5s;
+}
+
+.Banner_change_button
+{   
+    position: Absolute;
+    right: 15px;
+    bottom: 20px;
+}
+
+.Banner_change_button button
+{
+    background-color: rgb(0,0,0,0.0);
+    border: rgb(0,0,0,0.0);
+}
+
+
+.Banner_change_button img
+{
+    width: 45px;
+    padding: 15px;
+    border-radius: 60px;
+    background-image:  linear-gradient(rgb(255,255,255,0.5),rgb(0,0,0,0.5));
+    
+    transition: filter 0.5s;
+}
+
+.Banner_change_button img:hover
+{   
+    background-image:  linear-gradient(rgb(255,255,255,0.9),rgb(0,0,0,0.9));
+    filter: invert(1);
+}
+
+
+.current_date
+{   
+    width: 23%;
+    padding: 10px;
+    margin-bottom: 15px;
+
+    background-image: linear-gradient(rgb(255,255,255,0.2),rgb(0,0,0,0.2));
+    border-radius: 15px;
+
+    position: relative;
+    top: 20px;
+    left:15px;
+
+    transition: left 0.5s;
+}
+
+.current_date span
+{
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.current_date:hover
+{
+    left:30px;
+    background-image: none;
+    background-color: rgb(0,0,0,0.5);
+}
+
+
+.clock
+{   
+    width: 10.2%;
+    padding: 10px;
+    margin-top: 20px;
+
+    background-image: linear-gradient(rgb(255,255,255,0.2),rgb(0,0,0,0.2));
+    border-radius: 15px;
+
+    position: relative;
+    top: 5px;
+    left:15px;
+
+    transition: left 0.5s;
+}
+
+
+.clock span
+{
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.clock:hover
+{
+    left:30px;
+    background-image: none;
+    background-color: rgb(0,0,0,0.5);
+}
+
+/*About Page CSS*/
+
+#header_about_page
+{   
+    width:100%;
+    height: 450px;
+
+    background-image: url("../images/blog_about.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100%;
+
+    position: relative;
+    top: 60px;
+
+    transition: background-image 0.5s;
+}
+
+.Main_about_page
+{
+    width: 98%;
+    height: 400px;
+
+    position: relative;
+    top: 20px;
+
+    background-color:rgb(255,255,255,0.3);
+    color: white;
+    border-radius: 50px;
+
+    margin: auto;
+    margin-top: 55px;
+    margin-bottom: 35px;
+
+    padding: 10px;
+
+    transition: background-color 0.5s;
+}
+
+.Main_about_page:hover
+{
+    background-color:rgb(0,0,0,0.3);
+}
+
+.Main_about_page h1
+{
+    font-size: 35px;
+    text-align: center;
+}
+
+.Main_about_page p
+{   
+    padding-left: 30px;
+    padding-right: 30px;
+
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: left;
+}
+
+/*Gallery Page CSS*/
+.gallery_page
+{   
+    width: 100%;
+    height: 1200px;
+
+    
+    position: relative;
+    top: 60px;
+
+    padding-top:60px;
+    padding-left:60px;
+}
+
+.gallery_page h1
+{   
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+
+    bottom: 20px;
+    right: 20px;
+
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+
+}
+
+.gallery_page nav a img
+{
+    width: 310px;
+    height: 310px;
+
+    border-radius: 50px;
+
+    margin-left:15px;
+    margin-right:15px;
+    margin-bottom:25px;
+
+    transition: 0.5s;
+    transition-property: height,width;
+    
+}
+
+.gallery_page nav a img:hover
+{
+    width: 320px;
+    height: 320px;
+}
+
+
+/*Contact_page*/
+
+.contact_page
+{
+    width: 100%;
+    height: 1150px;
+
+    
+    position: relative;
+    top: 60px;
+
+}
+
+.contact_page_50_1
+{   
+    width: 50%;
+    height: 700px;
+    float: left;
+
+    background-image: url("../images/mail2.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.contact_page_50_1 h1
+{   
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.contact_page_50_1 a
+{   
+    margin-top: 5%;
+    margin-left: 42%;
+}
+
+.contact_page_50_1 a img
+{   
+    width:80px;
+    transition: 0.5s;
+    transition-property: width;
+}
+
+.contact_page_50_1 a img:hover
+{
+    width:110px;
+}
+
+
+.contact_page_50_2
+{
+    width: 50%;
+    height: 700px;
+    float: left;
+     
+    background-color: rgb(255,255,255,0.5);
+}
+
+.contact_page_50_2 h1
+{   
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.contact_page_50_2 table
+{
+    margin: auto;
+}
+
+.contact_page_50_2 table input
+{   
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact_page_50_2 table textarea
+{   
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input_design
+{
+    width: 400px;
+    height: 32px;
+    padding:10px;
+
+    border-radius: 30px;
+    border-color: rgb(0,0,0,0.0);
+}
+
+
+textarea
+{
+    border-radius: 15px;
+    border-color: rgb(0,0,0,0.0);
+    padding:10px;
+}
+
+.button_send
+{   
+    width: 80px;
+    height: 30px;
+
+    background-color: rgb(32, 131, 197);
+    border-color: rgb(0,0,0,0.0);
+    border-radius: 30px;
+    color: white;
+    
+    transition: box-shadow 0.5s;
+}
+
+.button_send:hover
+{
+    box-shadow: 2px 2px 5px black;
+}
+
+
+.button_reset
+{   
+    width: 80px;
+    height: 30px;
+    margin-left: 10px;
+
+    background-color: rgb(234, 2, 2);
+    border-color: rgb(0,0,0,0.0);
+    border-radius: 30px;
+    color: white;
+
+    transition: box-shadow 0.5s;
+}
+
+.button_reset:hover
+{
+    box-shadow: 2px 2px 5px black;
+}
+
+
+.google_map
+{   
+    clear: both;
+    width:100%;
+    height:400px;
+
+    position: relative;
+    top:5px;
+}
+
+.google_map iframe
+{   
+    width: 100%;
+    height: 400px;
+}
+
+
+/*Blog Page*/
+
+#blog_page_head
+{   
+    width:100%;
+    height: 100px;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top: 58px;
+
+}
+
+.blog_page
+{   
+
+    width: 100%;
+    height: 500px;
+    background-color: rgb(0,0,0,0.5);
+    margin-top:15px;
+}
+
+.blog_page_col_1
+{   
+    width:40%;
+    height: 90%;
+    border-radius: 60px;
+
+    margin: 20px;
+    float:left;
+}
+
+.blog_page_col_1 img
+{
+    width:100%;
+    height: 100%;
+    border-radius: 60px;
+}
+
+.blog_page_col_2
+{
+    width:52%;
+    height: 90%;
+    margin: 20px;
+    float:left;
+
+    border-radius: 60px;
+    background-color: rgb(255,255,255,0.3);
+    color:white;
+    padding:20px;
+
+    transition: background-color 0.5s;
+}
+
+.blog_page_col_2 a
+{
+    color: white;
+}
+
+.blog_page_col_2 h1
+{
+    text-align: center;
+    font-size: 20px;
+}
+
+.blog_page_col_2 p
+{
+    text-align: center;
+    font-size: 15px;
+    text-align: left;
+} 
+
+.blog_page_col_2:hover
+{
+    background-color: rgb(0,0,0,0.3);
+}
+
+/*Main section*/
+
+#main_home_page
+{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(0,0,0,0.5);
+    margin-top:80px;
+
+}
+
+.main_home_page_col_1
+{   
+    width:40%;
+    height: 90%;
+    border-radius: 60px;
+    background-image: url("../images/birajan.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100%;
+    margin: 20px;
+    float:left;
+}
+
+.main_home_page_col_2
+{
+    width:52%;
+    height: 90%;
+    margin: 20px;
+    float:left;
+
+    border-radius: 60px;
+    background-color: rgb(255,255,255,0.3);
+    color:white;
+    padding:20px;
+
+    transition: background-color 0.5s;
+}
+
+.main_home_page_col_2 h1
+{
+    text-align: center;
+    font-size: 20px;
+}
+
+.main_home_page_col_2 p
+{
+    text-align: center;
+    font-size: 15px;
+    text-align: left;
+} 
+
+.main_home_page_col_2:hover
+{
+    background-color: rgb(0,0,0,0.3);
+}
+
+
+#main2_home_page
+{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(0,0,0,0.5);
+
+    margin-top:20px;
+
+}
+
+.main2_home_page_col_1
+{   
+    width:40%;
+    height: 90%;
+    border-radius: 60px;
+    background-image: url("../images/table.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100%;
+    margin: 20px;
+    float:right;
+}
+
+.main2_home_page_col_2
+{
+    width:52%;
+    height: 90%;
+    margin: 20px;
+    float:right;
+
+    border-radius: 60px;
+    background-color: rgb(255,255,255,0.2);
+    color:white;
+    padding:20px;
+
+    transition: background-color 0.5s;
+}
+
+.main2_home_page_col_2 h1
+{
+    text-align: center;
+    font-size: 20px;
+}
+
+.main2_home_page_col_2 p
+{
+    text-align: center;
+    font-size: 15px;
+    text-align: left;
+} 
+
+.main2_home_page_col_2:hover
+{
+    background-color: rgb(0,0,0,0.3);
+}
+/*Footer section*/
+
+#footer_home_page
+{
+    width: 100%;
+    height: 130px;
+    margin-top:20px;
+    background-color: rgb(0,0,0,0.5);
+
+    color:white;
+    padding:20px;
+
+}
+
+#footer_home_page h1
+{   
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 4px;
+}
+
+#footer_home_page nav
+{
+    text-align: center;
+    margin-right: 38px;
+}
+
+#footer_home_page nav ul
+{
+    list-style-type: none;
+    
+}
+
+#footer_home_page nav ul li
+{
+    display: inline-block;
+}
+
+#footer_home_page nav ul li a img
+{   
+    width: 40px;
+    filter: invert(1);
+
+    transition: 0.3s;
+    transition-property: width;
+}
+
+#footer_home_page nav ul li a img:hover
+{   
+    width: 45px;
+}
+
+
+
+/*Bottom of The Page*/
+
+.bottom_page
+{   
+    width: 100%;
+    height: 90px;
+
+    margin-top:20px;
+
+    position: relative;
+    bottom: 0px;
+    
+}
+
+.bottom_page nav
+{   
+    position: relative;
+    left: 34%;
+}
+
+.bottom_page nav ul li
+{   
+    list-style-type: none;
+    display:inline-block;
+}
+
+.bottom_page nav ul li a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+
+    margin-left: 20px;
+}
+
+.bottom_page span
+{
+    color: white;
+    font-size: 12px;
+
+    position: relative;
+    left: 37%;
+}
+
+/*
+for mobile size
+*/
+
+@media screen and (max-width: 850px)
+{   
+    body
+    {
+
+        background-image: url("../images/pexels-lilartsy-1425353_2.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+        
+        background-color:black;
+
+    }
+
+    .menu nav
+    {
+        position: relative;
+        left: 0px;
+    }
+
+ 
+}
